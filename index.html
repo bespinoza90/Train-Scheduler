@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Train Scheduler</title>
+  
+  <src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-database.js"></script>
+  
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron col-lg-12 text-center" style="background-color: darkslategray; color:white;">
+      <h1>Anytime is Train Time</h1>
+      <h3>Choo Choo. Chee Chee.</h3>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading" style="background-color: darkslategray; color: white;">
+            <h3 class="panel-title">Current Train Schedule</h3>
+          </div>
+          <table class="table">
+            <tr class="headers">
+              <th>Train Name</th>
+              <th>Destination</th>
+              <th>Frequency</th>
+              <th>Next Arrival</th>
+              <th>Minutes Away</th>
+              
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading" style="background-color: darkslategray; color: white;">
+            <h3 class="panel-title">Add Train</h3>
+          </div>
+          <form>
+            <div class="form-group">
+              <label>Train Name</label>
+              <input id="ee-name" type="name" class="form-control">
+              <label>Destination</label>
+              <input id="ee-role" type="name" class="form-control">
+              <label>First Train Time (HHmm-military time)</label>
+              <input id="start-date" type="name" class="form-control">
+              <label>Frequency</label>
+              <input id="ee-rate" type="name" class="form-control">
+            </div>
+          </form>
+          <button id="addTrain" type="submit" class="btn btn-default" style="background-color:darkslategray; color:white;">Submit</button>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+  <script src="assets/javascript/app.js"></script>
+</body>
+</html>
